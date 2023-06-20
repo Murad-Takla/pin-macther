@@ -72,7 +72,7 @@ document.getElementById('submit').addEventListener('click' , function(){
     if(dueAttemp>1)
     attemp.innerText = dueAttemp - 1;
     else{
-    alert('Please Generate a Random Pin')
+    alert('Please Generate a Random Pin Throuh Pin Button')
    }
    } 
    
