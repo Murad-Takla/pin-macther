@@ -58,7 +58,9 @@ document.getElementById('submit').addEventListener('click' , function(){
    
     const correctMessage = document.getElementById('pin-correct')
     const wrongMessage = document.getElementById('pin-wrong')
-    
+     
+    const attemp = document.getElementById('attemp-left')
+    const dueAttemp = attemp.innerText
     
     if(generatedPin.value === calculaledPin.value){   
     correctMessage.style.display = 'block'
@@ -67,8 +69,13 @@ document.getElementById('submit').addEventListener('click' , function(){
    else{
     correctMessage.style.display = 'none'
     wrongMessage.style.display = 'block'
+    if(dueAttemp>1)
+    attemp.innerText = dueAttemp - 1;
+    else{
+    alert('Please Generate a Random Pin')
    }
-
+   } 
+   
 
 })
 
